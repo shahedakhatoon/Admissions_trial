@@ -23,7 +23,6 @@ a {
 
 #nav-bar {
   position: fixed;
-  top: 0px;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -61,7 +60,7 @@ a {
 .nav-link {
   float: left;
   display: block;
-  color: #000000;
+  color: #000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -110,6 +109,10 @@ a {
   margin-left: 3rem;
 }
 
+.price-box h2 {
+  padding: 1rem;
+}
+
 #features .feature div h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -154,10 +157,6 @@ a {
   padding: 1rem;
 }
 
-.price-box h2 {
-  padding: 1rem;
-}
-
 .price-box p {
   padding: 0 4rem 1rem;
 }
@@ -165,85 +164,4 @@ a {
 .price-box .btn {
   display: inline-block;
   margin: 1rem;
-}
-
-/* FOOTER */
-#main-footer {
-  background-color: #ccc;
-  padding: 1rem 4rem;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-#main-footer div a {
-  color: #333;
-  padding: 0.5rem 1rem;
-}
-
-#fcs {
-  text-decoration: underline;
-  color: #333;
-}
-
-/* TABLET AND SMARTPHONE */
-@media only screen and (max-width: 800px) {
-  #navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 0.3rem;
-  }
-
-  #navbar ul li {
-    padding: 1rem 1rem;
-  }
-
-  #features .feature {
-    flex-direction: column;
-  }
-
-  #features .feature div {
-    padding: 1rem;
-    margin: 0.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  #how-it-work {
-    padding: 1rem;
-  }
-
-  #how-it-work #video {
-    width: 80%;
-    height: 30%;
-  }
-
-  #pricing {
-    flex-direction: column;
-  }
-
-  #pricing .price-box {
-    margin: 1rem;
-  }
-
-  .price-box:first-child {
-    margin-right: 0;
-  }
-
-  .price-box:last-child {
-    margin-left: 0;
-  }
-
-  #main-footer {
-    padding: 2.5rem 0.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #main-footer .my-name {
-    margin: 1rem 0;
-  }
 }
